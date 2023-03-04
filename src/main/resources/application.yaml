@@ -1,0 +1,9 @@
+# Leaving production configuration for phase 2 of the epic
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/grpc
+    username: grpc_user
+    password: grpc_password
+    driver-class-name: org.postgresql.Driver
+

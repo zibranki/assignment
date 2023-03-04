@@ -1,0 +1,13 @@
+version: '3.6'
+services:
+  postgresql:
+    image: 'postgres:latest'
+    ports:
+      - "5432:5432"
+    environment:
+      # DB is not going to the production in docker anyway
+      POSTGRES_USER: grpc_user
+      POSTGRES_PASSWORD: grpc_password
+      POSTGRES_DB: grpc
+
+#     volumes: please create one if you want, but I bet you wouldn't want this service to store anything on your system
